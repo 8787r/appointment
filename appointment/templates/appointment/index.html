@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <style>
+        th,td{
+        border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+ <h2>Appointment Booking</h2>
+ <div class="main-block">
+    <div class="left-part">
+      <i class="fas fa-graduation-cap"></i>
+      <h1>Submit Details for Registration</h1>
+    </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="title">
+        <i class="fas fa-pencil-alt"></i> 
+      </div>
+      <div class="info">
+        <input type="text" name="name_patient" placeholder="Name of patient">
+        <input type="text" name="contact_no" placeholder="Contact Number">
+        <input type="date" name="date" placeholder="Appointment date">
+        <input type="text" name="name_doctor" placeholder="Name of doctor">
+      </div>
+      <button type="submit" href="/">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
